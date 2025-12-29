@@ -1,4 +1,3 @@
-
 .meal-summary {
   background: white;
   border-radius: 20px;
@@ -94,4 +93,197 @@
 }
 
 .item-slot.filled {
-  background: linear-gradient(135deg, #f0fdf4 0%, #ecfdf5
+  background: linear-gradient(135deg, #f0fdf4 0%, #ecfdf5 100%);
+  border: 2px solid #10b981;
+  border-style: solid;
+}
+
+.slot-icon {
+  font-size: 1.5rem;
+}
+
+.slot-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.slot-label {
+  font-size: 0.75rem;
+  color: #6b7280;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.slot-name {
+  font-weight: 600;
+  color: #1a1a2e;
+  font-size: 0.9rem;
+}
+
+.slot-calories {
+  font-size: 0.8rem;
+  color: #10b981;
+  font-weight: 500;
+}
+
+.slot-empty {
+  color: #9ca3af;
+  font-style: italic;
+  font-size: 0.9rem;
+}
+
+.total-nutrition {
+  padding-top: 1.5rem;
+  border-top: 2px solid #f3f4f6;
+}
+
+.total-nutrition h4 {
+  margin: 0 0 1rem 0;
+  font-size: 1rem;
+  color: #1a1a2e;
+}
+
+.total-macro-bar {
+  display: flex;
+  height: 12px;
+  border-radius: 6px;
+  overflow: hidden;
+  background: #f3f4f6;
+  margin-bottom: 1rem;
+}
+
+.protein-segment {
+  background: linear-gradient(90deg, #10b981, #34d399);
+}
+
+.carbs-segment {
+  background: linear-gradient(90deg, #f59e0b, #fbbf24);
+}
+
+.fat-segment {
+  background: linear-gradient(90deg, #ef4444, #f87171);
+}
+
+.total-macros {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.75rem;
+  margin-bottom: 1rem;
+}
+
+.total-macro {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.75rem;
+  border-radius: 10px;
+}
+
+.total-macro.protein {
+  background: linear-gradient(135deg, #ecfdf5 0%, #d1fae5 100%);
+}
+
+.total-macro.carbs {
+  background: linear-gradient(135deg, #fffbeb 0%, #fef3c7 100%);
+}
+
+.total-macro.fat {
+  background: linear-gradient(135deg, #fef2f2 0%, #fee2e2 100%);
+}
+
+.macro-icon {
+  font-size: 1.25rem;
+}
+
+.macro-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.macro-amount {
+  font-weight: 700;
+  font-size: 1rem;
+}
+
+.total-macro.protein .macro-amount {
+  color: #059669;
+}
+
+.total-macro.carbs .macro-amount {
+  color: #d97706;
+}
+
+.total-macro.fat .macro-amount {
+  color: #dc2626;
+}
+
+.macro-name {
+  font-size: 0.7rem;
+  color: #6b7280;
+}
+
+.additional-stats {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.75rem;
+  background: #f9fafb;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+}
+
+.stat {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.25rem;
+}
+
+.stat-label {
+  font-size: 0.7rem;
+  color: #6b7280;
+}
+
+.stat-value {
+  font-weight: 600;
+  font-size: 0.85rem;
+  color: #374151;
+}
+
+.protein-highlight {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.75rem 1rem;
+  background: linear-gradient(135deg, #ecfdf5 0%, #d1fae5 100%);
+  border-radius: 10px;
+  border: 1px solid #10b981;
+}
+
+.highlight-label {
+  font-size: 0.85rem;
+  color: #065f46;
+}
+
+.highlight-value {
+  font-weight: 700;
+  color: #059669;
+}
+
+@media (max-width: 480px) {
+  .total-macros {
+    grid-template-columns: 1fr;
+  }
+
+  .additional-stats {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .protein-highlight {
+    flex-direction: column;
+    text-align: center;
+    gap: 0.25rem;
+  }
+}
