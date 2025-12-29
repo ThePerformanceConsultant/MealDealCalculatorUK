@@ -1,0 +1,260 @@
+
+.meal-summary {
+  background: white;
+  border-radius: 20px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  position: sticky;
+  top: 1rem;
+}
+
+.summary-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+.summary-header h3 {
+  margin: 0;
+  font-size: 1.25rem;
+  color: #1a1a2e;
+}
+
+.reset-btn {
+  padding: 0.5rem 1rem;
+  background: #fee2e2;
+  color: #dc2626;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 0.85rem;
+  transition: all 0.2s;
+}
+
+.reset-btn:hover {
+  background: #fecaca;
+}
+
+.budget-progress {
+  margin-bottom: 1.5rem;
+}
+
+.budget-bar {
+  height: 12px;
+  background: #f3f4f6;
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.budget-fill {
+  height: 100%;
+  transition: width 0.3s ease, background 0.3s ease;
+  border-radius: 6px;
+}
+
+.budget-info {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 0.5rem;
+  font-size: 0.85rem;
+}
+
+.used {
+  color: #374151;
+  font-weight: 500;
+}
+
+.remaining {
+  color: #10b981;
+  font-weight: 500;
+}
+
+.remaining.over {
+  color: #ef4444;
+}
+
+.selected-items {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  margin-bottom: 1.5rem;
+}
+
+.item-slot {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem;
+  background: #f9fafb;
+  border: 2px dashed #e5e7eb;
+  border-radius: 12px;
+  transition: all 0.2s;
+}
+
+.item-slot.filled {
+  background: linear-gradient(135deg, #f0fdf4 0%, #ecfdf5 100%);
+  border: 2px solid #10b981;
+  border-style: solid;
+}
+
+.slot-icon {
+  font-size: 2rem;
+}
+
+.slot-content {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.slot-label {
+  font-size: 0.75rem;
+  color: #9ca3af;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.slot-name {
+  font-weight: 600;
+  color: #1a1a2e;
+  font-size: 0.9rem;
+}
+
+.slot-calories {
+  font-size: 0.85rem;
+  color: #10b981;
+  font-weight: 500;
+}
+
+.slot-empty {
+  color: #9ca3af;
+  font-style: italic;
+}
+
+.total-nutrition {
+  padding-top: 1.5rem;
+  border-top: 2px solid #f3f4f6;
+}
+
+.total-nutrition h4 {
+  margin: 0 0 1rem 0;
+  font-size: 1rem;
+  color: #1a1a2e;
+}
+
+.total-macro-bar {
+  display: flex;
+  height: 16px;
+  border-radius: 8px;
+  overflow: hidden;
+  margin-bottom: 1rem;
+}
+
+.protein-segment {
+  background: linear-gradient(90deg, #10b981, #34d399);
+}
+
+.carbs-segment {
+  background: linear-gradient(90deg, #f59e0b, #fbbf24);
+}
+
+.fat-segment {
+  background: linear-gradient(90deg, #ef4444, #f87171);
+}
+
+.total-macros {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.75rem;
+  margin-bottom: 1rem;
+}
+
+.total-macro {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.75rem;
+  border-radius: 10px;
+}
+
+.total-macro.protein {
+  background: #ecfdf5;
+}
+
+.total-macro.carbs {
+  background: #fffbeb;
+}
+
+.total-macro.fat {
+  background: #fef2f2;
+}
+
+.macro-icon {
+  font-size: 1.25rem;
+}
+
+.macro-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.macro-amount {
+  font-weight: 700;
+  font-size: 1.1rem;
+}
+
+.total-macro.protein .macro-amount { color: #059669; }
+.total-macro.carbs .macro-amount { color: #d97706; }
+.total-macro.fat .macro-amount { color: #dc2626; }
+
+.macro-name {
+  font-size: 0.7rem;
+  color: #6b7280;
+}
+
+.additional-stats {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.75rem;
+  background: #f9fafb;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+}
+
+.stat {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.stat-label {
+  font-size: 0.7rem;
+  color: #9ca3af;
+}
+
+.stat-value {
+  font-weight: 600;
+  color: #374151;
+  font-size: 0.9rem;
+}
+
+.protein-highlight {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.75rem 1rem;
+  background: linear-gradient(135deg, #ecfdf5 0%, #d1fae5 100%);
+  border-radius: 10px;
+}
+
+.highlight-label {
+  font-size: 0.85rem;
+  color: #047857;
+}
+
+.highlight-value {
+  font-weight: 700;
+  color: #059669;
+}

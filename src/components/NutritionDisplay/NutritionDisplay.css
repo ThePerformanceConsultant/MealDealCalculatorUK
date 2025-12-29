@@ -1,0 +1,152 @@
+
+.nutrition-compact {
+  font-size: 0.8rem;
+}
+
+.macro-bar, .macro-bar-large {
+  display: flex;
+  height: 8px;
+  border-radius: 4px;
+  overflow: hidden;
+  background: #f3f4f6;
+  margin-bottom: 0.5rem;
+}
+
+.macro-bar-large {
+  height: 12px;
+  border-radius: 6px;
+}
+
+.protein-bar {
+  background: linear-gradient(90deg, #10b981, #34d399);
+}
+
+.carbs-bar {
+  background: linear-gradient(90deg, #f59e0b, #fbbf24);
+}
+
+.fat-bar {
+  background: linear-gradient(90deg, #ef4444, #f87171);
+}
+
+.macro-legend {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.75rem;
+}
+
+.protein-legend { color: #059669; }
+.carbs-legend { color: #d97706; }
+.fat-legend { color: #dc2626; }
+
+.extra-info {
+  color: #6b7280;
+  font-size: 0.75rem;
+  margin-top: 0.25rem;
+}
+
+.nutrition-display {
+  background: white;
+  border-radius: 16px;
+  padding: 1.5rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+}
+
+.nutrition-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 1.5rem;
+}
+
+.nutrition-header h4 {
+  margin: 0;
+  font-size: 1.1rem;
+  color: #1a1a2e;
+  flex: 1;
+  padding-right: 1rem;
+}
+
+.total-calories {
+  padding: 0.5rem 1rem;
+  background: linear-gradient(135deg, #6366f1 0%, #8b5cf6 100%);
+  color: white;
+  border-radius: 10px;
+  font-weight: 600;
+  font-size: 1rem;
+  white-space: nowrap;
+}
+
+.macro-breakdown {
+  margin-bottom: 1.5rem;
+}
+
+.macro-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.75rem;
+  margin-top: 1rem;
+}
+
+.macro-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+  border-radius: 12px;
+  text-align: center;
+}
+
+.macro-card.protein {
+  background: linear-gradient(135deg, #ecfdf5 0%, #d1fae5 100%);
+}
+
+.macro-card.carbs {
+  background: linear-gradient(135deg, #fffbeb 0%, #fef3c7 100%);
+}
+
+.macro-card.fat {
+  background: linear-gradient(135deg, #fef2f2 0%, #fee2e2 100%);
+}
+
+.macro-value {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.macro-card.protein .macro-value { color: #059669; }
+.macro-card.carbs .macro-value { color: #d97706; }
+.macro-card.fat .macro-value { color: #dc2626; }
+
+.macro-label {
+  font-size: 0.85rem;
+  color: #6b7280;
+  margin-top: 0.25rem;
+}
+
+.macro-percent {
+  font-size: 0.75rem;
+  color: #9ca3af;
+  margin-top: 0.25rem;
+}
+
+.nutrition-details {
+  border-top: 1px solid #e5e7eb;
+  padding-top: 1rem;
+}
+
+.detail-row {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5rem 0;
+  font-size: 0.9rem;
+}
+
+.detail-row span:first-child {
+  color: #6b7280;
+}
+
+.detail-row span:last-child {
+  font-weight: 500;
+  color: #374151;
+}

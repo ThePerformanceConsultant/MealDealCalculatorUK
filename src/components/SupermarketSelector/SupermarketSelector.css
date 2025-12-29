@@ -1,0 +1,61 @@
+
+.supermarket-selector {
+  text-align: center;
+  padding: 2rem;
+}
+
+.supermarket-selector h2 {
+  font-size: 1.75rem;
+  color: #1a1a2e;
+  margin-bottom: 0.5rem;
+}
+
+.supermarket-selector .subtitle {
+  color: #6b7280;
+  margin-bottom: 2rem;
+}
+
+.supermarket-grid {
+  display: flex;
+  gap: 1.5rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.supermarket-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 160px;
+  height: 140px;
+  border: 2px solid #e5e7eb;
+  border-radius: 16px;
+  background: white;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+}
+
+.supermarket-card:hover {
+  border-color: #6366f1;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(99, 102, 241, 0.15);
+}
+
+.supermarket-card.selected {
+  border-color: #6366f1;
+  background: linear-gradient(135deg, #f0f0ff 0%, #e8e8ff 100%);
+  box-shadow: 0 4px 16px rgba(99, 102, 241, 0.25);
+}
+
+.supermarket-icon {
+  font-size: 3rem;
+  margin-bottom: 0.75rem;
+}
+
+.supermarket-name {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #1a1a2e;
+}
