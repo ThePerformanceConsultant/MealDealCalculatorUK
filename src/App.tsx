@@ -1,5 +1,5 @@
 
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { SupermarketSelector } from './components/SupermarketSelector/SupermarketSelector';
 import { CalorieCalculator } from './components/CalorieCalculator/CalorieCalculator';
 import { FoodSelector } from './components/FoodSelector/FoodSelector';
